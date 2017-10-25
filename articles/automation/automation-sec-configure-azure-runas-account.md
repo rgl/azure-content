@@ -126,7 +126,7 @@ The PowerShell script will configure the following:
     $PFXCert = New-Object -TypeName System.Security.Cryptography.X509Certificates.X509Certificate -ArgumentList @($CertPath, $CertPlainPassword)
     $KeyValue = [System.Convert]::ToBase64String($PFXCert.GetRawCertData())
 
-    $KeyCredential = New-Object  Microsoft.Azure.Commands.Resources.Models.ActiveDirectory.PSADKeyCredential
+    $KeyCredential = New-Object  Microsoft.Azure.Graph.RBAC.Version1_6.ActiveDirectory.PSADKeyCredential
     $KeyCredential.StartDate = $CurrentDate
     $KeyCredential.EndDate= $EndDate
     $KeyCredential.KeyId = $KeyId
