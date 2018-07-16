@@ -17,13 +17,13 @@
 	ms.date="03/15/2016" 
 	ms.author="byvinyal"/>
 
-#Azure App Service plans in-depth overview#
+# Azure App Service plans in-depth overview#
 
 An **App Service plan** represents a set of features and capacity that you can share across multiple apps in [Azure App Service](http://go.microsoft.com/fwlink/?LinkId=529714), including Web Apps, Mobile Apps, Logic Apps or API Apps. These plans support 5 pricing tiers (**Free**, **Shared**, **Basic**, **Standard** and **Premium**) where each tier has its own capabilities and capacity. Apps in the same subscription and geographic location can share a plan. All the apps sharing a plan can leverage all the capabilities and features defined by the plan's tier. All apps associated with a given plan run on the resources defined by the plan. For example, if your plan is configured to use two "small" instances in the standard service tier, all apps associated with that plan will run on both instances and will have access to the standard service tier functionality. Plan instances on which apps are running on are fully managed and highly available.
 
 In this article we'll explore the key characteristics such as tier and scale of an App Service plan and how they come into play while managing your apps.
 
-##Apps, and App Service plans
+## Apps, and App Service plans
 
 An app in App Service can be associated with only one App Service plan at any given time. 
 
@@ -93,7 +93,7 @@ You can change the pricing tier and instance size by clickin on the **Scale Up**
  
  ![][pricingtier]
 
-##Summary
+## Summary
 
 App Service plans represent a set of features and capacity that you can share across your apps. App Service plans give you the flexibility to allocate specific apps to a given set of resources and further optimize you Azure resource utilization. This way, if you want to save money on your testing environment you can share a plan across multiple apps. You can also maximize throughput for your production environment by scaling it across multiple regions and plans.
 
